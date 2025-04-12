@@ -9,9 +9,7 @@ This repository is a fork of Uniswap V2, created for educational purposes only.
 Explore and debug Uniswap V2 functionality using Solar Space. Here's how:
 
 1. Open this repository in your browser via Solar Space:  
-    [https://solarspace.dev/github/RaoulSchaffranek/uniswap-v2-core](https://solarspace.dev/github/RaoulSchaffranek/uniswap-v2-core) \
-    or via Code Space:
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/RaoulSchaffranek/uniswap-v2-core?quickstart=1)
+    [https://solarspace.dev/github/RaoulSchaffranek/uniswap-v2-core](https://solarspace.dev/github/RaoulSchaffranek/uniswap-v2-core)
 
 2. Navigate to the `test/DebugV2Pair.sol` file.
 
