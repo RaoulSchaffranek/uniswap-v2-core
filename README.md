@@ -21,7 +21,8 @@ Explore and debug Uniswap V2 functionality using Solar Space. Here's how:
 
 The following updates have been made to this repository:
 
-- Updated contracts to support `solc` 0.8.*
+- Added some external contracts from [UniswapV2Periphery](https://github.com/Uniswap/v2-periphery), [UniswapLib](https://github.com/Uniswap/solidity-lib) and [WETH9](https://github.com/gnosis/canonical-weth) for convinience
+- Updated all contracts to support `solc` 0.8.*
 - Added Foundry configuration
 - Integrated Solar Space devcontainer
 - Introduced Simbolik entry point

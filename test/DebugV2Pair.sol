@@ -40,10 +40,10 @@ contract DebugV2Pair {
     function debugSwap() external {
         // Alice provides liquidity
         uint256 shares = alice.provideLiquidity(100 ether, 100 ether);
-        // Bob swaps 10e18 tokenA for 1 tokenB
-        // This price is way too high, but Uniswap doesn't care
+        // Bob swaps 10e18 tokenA for 9e18 tokenB
+        // Bob's pays more than the spot price
         // It's Bob's responsibility to set reasonable risk parameters
-        bob.swapAforB(10 ether, 1 wei);
+        bob.swapAforB(10 ether, 9 ether);
         // Alice removes liquidity
         alice.removeLiquidity(shares);
 
