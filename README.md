@@ -1,24 +1,12 @@
-# Uniswap V2
+# Solar Space for Uniswap V2
 
-[![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
-[![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
+This repository is a fork of Uniswap V2 for educational purposes only.
+It contains unaudited changes and should not be used for production!
 
-In-depth documentation on Uniswap V2 is available at [uniswap.org](https://uniswap.org/docs).
+The following changes were made:
+- Updated contracts to work with solc 0.8.*
+- Added Foundry configuration
+- Added Solar Space devcontainer
+- Added Simbolik entry point
+- Replaced SafeMath with compiler checked arithmetic
 
-The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/v2-core@latest/).
-
-# Local Development
-
-The following assumes the use of `node@>=10`.
-
-## Install Dependencies
-
-`yarn`
-
-## Compile Contracts
-
-`yarn compile`
-
-## Run Tests
-
-`yarn test`
