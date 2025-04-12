@@ -1,0 +1,48 @@
+{
+  // For format details, see https://aka.ms/devcontainer.json.
+  "name": "solar-blank",
+  
+  // You can use image or directly use a Dockerfile or Docker Compose file.
+  // More info: https://containers.dev/guide/dockerfile
+  // https://github.com/devcontainers/images/tree/main/src/base-alpine
+  // "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "image": "ghcr.io/solarspace-dev/solar-blank:latest",
+  // "build": {
+  //   "dockerfile": "./Dockerfile"
+  // },
+    
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+  },
+  
+  // Writable mounts in case you want to set --read-only above.
+  "mounts": [
+  ],
+  
+  
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "settings": {
+        // Killswitch for automated tasks
+        "task.autoDetect": "off",
+        "task.problemMatchers.autoDetect": "off",
+        // Trust no one by default
+        "security.workspace.trust.enabled": false,
+        // Killswitch for telemetry
+        "telemetry.telemetryLevel": "off"
+      },
+      "extensions": [
+        "solarspace.solarspace",
+        "juanblanco.solidity",
+        "trailofbits.weaudit",
+        "runtimeverification.simbolik"
+      ]
+    }
+  },
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": ""
+  // Use 'postAttachCommand' to attach a command after the container is opened.
+  "postAttachCommand": "git remote remove upstream || true"
+}
